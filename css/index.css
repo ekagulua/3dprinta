@@ -19,7 +19,7 @@ h1 {
 	text-shadow: #C6E0E6-1px -2px 0.5em;
 }
 nav {
-    position: fixed;
+    position: absolute;
     padding-left: 19%;
     padding-top: 10px;
     height: auto;
