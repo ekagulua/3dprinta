@@ -1,14 +1,17 @@
 body {
-    max-width: 70%;
+    max-width: 1000px;
     height: 100%;
     margin: auto;
     background-color: #EAECF0;
     font-family: verdana;
+    width: 80%;
 }
 
 header {
-    margin: 1px 1px 1px 1px;
-    padding: 10px 1px 1px 1px;
+    margin: 1px;
+    padding: 10px 1px;
+    position: sticky;
+    top: 0;
 }
 
 h1 {
@@ -26,8 +29,8 @@ ul {
     margin: 0;
     padding-top: 25px;
     overflow: hidden;
-    position: sticky;
-    top: 10px;
+    position: inherit;
+    float: right;
 }
 
 li {
@@ -46,11 +49,13 @@ li a {
 li a:hover {
     color: #66A5AD;
 }
+h2 {
+    text-align: center;
+}
 .topline {
     border-top: 3px solid #003B46;
     width: 100%;
 }
-
 .video_bg {
     min-height: 400px;
     display: flex;
