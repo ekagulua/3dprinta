@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <title>3d printa. 3д друк у Львові</title>
     <link rel="stylesheet" href="index.css/index.css">
 </head>
+
 <body>
+
     <header>
-        <h1>3D Printa</h1>
+        <div class="logo">
+            <h1>3D Printa</h1>
+        </div>
         <nav>
             <ul class="navbar">
                 <li><a href="">Головна</a></li>
@@ -21,48 +26,60 @@
             </ul>
         </nav>
     </header>
-    <hr class="topline">
-    <div class="video_bg">
-        <video autoplay loop muted>
-         <source type="video/mp4" src="video/printing_header.mp4">
-        </video>
+    <div class="header-img">
+        <img src="img/header-print.jpg">
+    </div>
     </div>
     <hr class="topline">
-    <!--using ajax/fetch-our-work-->
-     <section>
-            <div class="html-placeholder"></div>
-            <button class="load-html-ajax">Наша робота</button>
-        </section>
-        
-    <div id="blog" class="grid">
-        <article class="blog_tile">
-            <h2>Блог</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+    <div id="our-work" class="grid">
+        <article class="our-work">
             <div class="button-container">
-                <button class="button">Детальніше...</button>
+                <button class="button"><h4 class="our-work-img">Our work</h4></button>
             </div>
+            <div class="container-fluid">
+                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class=carousel-indicators>
+                        <li class="active" data-target="#carouselIndicators" data-slide-to="0"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src=".jpg" alt="RC" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src=".jpg" alt="house" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src=".jpg" alt="arduino" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a href="#carouselIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" area-hidden="true"></span>
+                        <span class="sr-only">previous</span>
+                    </a>
+                    <a href="#carouselIndicators" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" area-hidden="true"></span>
+                        <span class="sr-only">next</span>
+                    </a>
+                </div>
+            </div>
+
         </article>
-        <article class="blog_tile">
-            <h2>Блог</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+        <article class="our-work">
             <div class="button-container">
-                <button class="button">Детальніше...</button>
+                <button class="button"><h4 class="our-work-img">What we can do...</h4></button>
             </div>
-        </article>
-        <article class="blog_tile">
-            <h2>Блог</h2>
+
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <div class="button-container">
-                <button class="button">Детальніше...</button>
-            </div>
-        </article>
+
+                <img src="img/.png">
+
+        </article><br>
+
+
     </div>
+
     <hr class="topline">
     <section id="about">
         <h2>Хто ми є</h2>
@@ -73,7 +90,10 @@
             sed diam.
         </p>
     </section>
+
     <hr class="topline">
+
+
     <section id="service">
         <h2>Послуги</h2>
         <p><b>Заміри.</b> Якщо маєте деталь чи модель, яку треба скопіювати, або місце, куди та модель має бути поміщена, ми проводимо чіткі і деталізовані вимірювання.<br></p>
@@ -89,23 +109,75 @@
         <p> <b>Зовнішнє оброблення.</b> Після друку, об’єкт може мати надто жорстку поверхню і потребувати одальшого оброблення, щоб бути більш гладким чи блискучим. Для того є декілька методів залежно від матеріалу друку, призначення об’єкта і побажань замовника.
         </p>
     </section>
+
     <hr class="topline">
     <section id="technology">
         <h2>Технології</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,bnnmkh ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie
-            elit, et lacinia ipsum quam nec dui. Quisque nec maujjjh sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. vvvhg Ut vulputate eros sed felis
-            sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit
-            sed diam.
+            Є декілька технологій для друку речей. Кожна має свої переваги та недоліки.
+            <br><br>
+            <b>Екструдерний друк або FDM (Fused filament fabrication).</b> Цей друк найпоишреніший і найдоступніший посеред всіх інших, оскільки технологія доволі проста. Ця технологія також була першою у сфері 3Д друку. Друк здійснюється за рахунок розплавлювання
+            пластикової або гумової нитки товщиною 1.75 або 3 мм і виведення на поверхню друку через спеціальне вузьке сопло. За час друку нитка на друкованій поверхні встигає вистигнути і залишитися на місці. Таким чином друк наноситься шарами висотою
+            від 0,05 мм до 0,3 мм і більше, якщо цього вимагає швидкість. Чим менша висота - тим гладша поверхня і, одночасно, довший час друку.
+            <br>
+            <b>Порошковий друк.</b> Це друк якісно вищого рівня і, відповідно,
         </p>
     </section>
+
     <hr class="topline">
+    <div id="blog" class="grid">
+        <article class="blog_tile">
+            <h2>Технології майбутнього: 3D-принтери, що друкують шоколад та цукерки</h2>
+            <p>
+                На Міжнародній виставці побутової електроніки (CES) у Лас-Вегасі представили два 3D-принтери, що можуть <br> друкувати солодощі. Промислове виробництво цих пристроїв має розпочатися вже протягом цього року.
+            </p>
+            <img src="img/cendy.jpg" alt="cendy">
+            <p> Представлені принтери здатні друкувати шоколад та ласощі на основі цукру у різноманітних формах, які важко було б створити за допомогою традиційних методів.<br Водночас експерти кажуть, що через зависоку ціну продаж цих принтерів буде обмежений.<br>                Базова версія коштуватиме близько 5 000 доларів, тоді як більш "просунутий" варіант обійдеться вдвічі дорожче.<br> До сьогодні найчастіше 3D-принтери такого цінового діапазону використовувалися для створення прототипів – моделей, що дозволяють
+                побачити, як виглядатиме майбутній продукт,<br> а про вироблення товарів, готових до вжитку та продажу, мови не було.<br> Солодощі створюються шляхом пошарового друку. Спочатку принтер друкує цукровий шар, а тоді за допомогою струменевої
+                голівки наносить шар води, аби суміш застигла. Це дозволяє<br> створити не просто ласощі, а придатні до споживання комплексні конструкції, які часом навіть мають рухомі деталі.<br> Принтери, що можуть друкувати їжу, зацікавили і NASA.
+                Відомо, що космічна агенція фінансує розробку пристрою, що зможе друкувати харчі для астронавтів.
+            </p>
+             <img src="img/printing-cendy.jpg" alt="cendy">
+        </article>
+        <article class="blog_tile">
+            <h2>Український стартап презентував перший 3D-принтер для друку кераміки</h2>
+            <p>
+                Одеський стартап Kwambio презентував власну розробку — перший високоточний 3D-принтер для друку кераміки.<br>
+                Засновник стартапу Володимир Усов розповів, що перший прототип принтера, який створили ще у минулому році, не міг надрукувати
+                виріб з кераміки з досить точно і швидко.<br>
+                 <img src="img/ua-printer.png">
+                Процес займав понад тиждень і точність друку була недосконалою. Тоді Kwambio вирішили доопрацювати його.<br> 
+                Команді вдалося скоротити терміни виробництва виробів до кількох днів за допомогою
+                створення нової технології струменевого 3D-друку керамічними порошками,<br>
+                що дозволяє друкувати відразу готові об'єкти.<br> 
+                Для впровадження технології інженери Kwambio зібрали власний принтер, який вже працює на фабриці в Одесі. Модель
+                називається Ceramo One.<br> 
+                Тепер Kwambio друкує на 3D-принтерах об'єкти будь-якої складності: прикраси, посуд, предмети інтер'єру, промислові зразки і навіть <br>
+                кісткові імплантати. За словами розробників, основна відмінність українського
+                принтера Kwambio від існуючих в світі аналогів — високі швидкість (160 мм / с) і точність друку (20 мкм). Максимальний розмір виробу,<br>
+                який Ceramo One може надрукувати за один раз, 35x35x38 см. Вироби більшого розміру друкуються по частинах.<br>
+                Команда Kwambio також оголосила про залучення інвестицій в розмірі $ 500 тисяч від венчурних фондів.<br>
+                Кошти будуть спрямовані на запуск і виробництва принтера, а також збільшення виробничих потужностей фабрики в Одесі.
+            </p>
+           
+
+        </article><br>
+
+
+    </div>
+    <hr class="topline">
+
     <footer>
         <div id="contact" class="footer-grid">
             <article class="footer-tile">
+                <h3>Контакти</h3>
+                <br>
+                <p>+0939223163</p>
+                <p></p>Skype: andriycivic</p>
+                <p>Львів, Україна</p>
             </article>
             <article class="footer-tile">
-                <h3>Контакти</h3>
+                <h3>Зв'яжіться з нами</h3>
                 <form method="post" action="https://formspree.io/1211eka@gmail.com"></form>
                 <label for="name" id="Імя">Імя:</label><br>
                 <input type="text" name="client-name" placeholder="імя" id="name" required>
@@ -125,13 +197,14 @@
                 <input type="reset" value="Скинути">
             </article>
             <article class="footer-tile">
+                <h3>Ми в соцмережах</h3>
             </article>
         </div>
         <!--time loading-->
-        <p>Page loaded: <span class="page-loaded"></span></p>
-       
+        <p><span class="page-loaded"></span></p>
+
     </footer>
-    
+
     <script src="js/index.js"></script>
 </body>
 
