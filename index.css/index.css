@@ -192,11 +192,11 @@ button .aboutus {
     display: grid;
     grid-template-columns: 32.5% 32.5% 32.5%;
     grid-gap: 10px;
-    background-image: url("/img/footer.jpg");
-    background-color: #cccccc;
+    background-image: url("img/footer.jpg");
+    background-color: #353535;
     background-size: cover;
     position: relative;
-    height: 325px;
+    height: 400px;
     padding: 5px;
     margin: 5px;
     text-align: center;
