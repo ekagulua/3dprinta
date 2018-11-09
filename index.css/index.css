@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    
     margin: 0;
     height: 80px;
     position: sticky;
@@ -15,7 +16,7 @@ header {
     background-color: #302E2D;
     background-clip: silver;
     width: 100%;
-
+    z-index: 1;
     overflow: visible;
 }
 
@@ -34,7 +35,19 @@ h1 {
     position: absolute;
 }
 
+img #social {
+    padding-left: 15px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .navbar {
+    z-index: 2;
     list-style-type: none;
     margin-left: 100px;
     padding-top: 18px;
@@ -44,6 +57,7 @@ h1 {
     float: right;
     padding-left: 100px;
     text-align: center;
+    
 }
 
 li {
@@ -74,11 +88,10 @@ h2 {
 
 
 .header-img {
-    max-width: 800px;
+    max-width: 1200px;
     padding-left: 0px;
-    display: block;
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
 }
 
 .button {
@@ -106,7 +119,7 @@ button:hover {
 grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding: 5px;
     margin: 5px;
 
@@ -114,11 +127,12 @@ grid {
 
 .our-work {
     background-color: #EAECF0;
-    padding: 20px;
+    padding: 40px;
     padding-bottom: 0;
     box-shadow: 0 0 5px 5px lightgrey;
     border-radius: 7px;
     width: 100%;
+    margin: auto;
 }
 
 .our-work img {
@@ -207,4 +221,7 @@ textarea {
     text-align: center;
     color: black;
 }
-
+.button-container {
+    text-align: -webkit-center;
+    padding-bottom: 5px;
+}
